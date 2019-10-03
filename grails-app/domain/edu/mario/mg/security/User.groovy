@@ -1,6 +1,7 @@
 package edu.mario.mg.security
 
 import java.time.LocalDate
+import java.time.LocalDateTime
 
 class User {
 
@@ -16,6 +17,12 @@ class User {
     String email
 
     static hasMany = [permissions: Permission]
+
+    boolean enabled = true
+    String createdBy
+    String modifyBy
+    LocalDateTime created
+    LocalDateTime updated
 
     static mapping = {
         table "users"
