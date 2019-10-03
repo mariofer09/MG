@@ -1,11 +1,12 @@
 package edu.mario.mg
 
-class Category {
-
+class Chapter {
     String name
     String description
-
+    int pages
+    String Data
     static constraints = {
-        table "categorys"
+        table "chapters"
     }
+
 }

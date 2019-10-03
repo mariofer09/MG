@@ -1,19 +1,20 @@
 package edu.mario.mg
 
-import java.time.LocalDateTime
+import java.time.LocalDate
 
 class Manga {
-    int code
+
+
+    String description
     String name
-    String category
-    String author
-    int chapters
-    LocalDateTime begin
-    LocalDateTime end
+    Category category
+    Author author
+    int QuantityChapters
+    LocalDate begin
+    LocalDate end
 
-
-
+    static hasMany = [chapters: Chapter]
     static constraints = {
-        table "manga"
+        table "mangas"
     }
 }
