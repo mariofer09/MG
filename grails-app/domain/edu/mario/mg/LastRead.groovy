@@ -1,6 +1,7 @@
 package edu.mario.mg
 
 import edu.mario.mg.security.User
+import edu.mario.mg.utils.Constants
 
 import java.time.LocalDateTime
 
@@ -12,8 +13,8 @@ class LastRead {
     int lastPageRead
 
     boolean enabled = true
-    String createdBy
-    String modifyBy
+    String createdBy = Constants.SYSTEM
+    String modifyBy = Constants.SYSTEM
     LocalDateTime created
     LocalDateTime updated
 

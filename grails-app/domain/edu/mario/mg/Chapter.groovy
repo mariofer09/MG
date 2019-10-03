@@ -1,5 +1,7 @@
 package edu.mario.mg
 
+import edu.mario.mg.utils.Constants
+
 import java.time.LocalDateTime
 
 class Chapter {
@@ -10,8 +12,8 @@ class Chapter {
     String data
 
     boolean enabled = true
-    String createdBy
-    String modifyBy
+    String createdBy = Constants.SYSTEM
+    String modifyBy = Constants.SYSTEM
     LocalDateTime created
     LocalDateTime updated
 

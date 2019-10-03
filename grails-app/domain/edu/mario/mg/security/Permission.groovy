@@ -1,5 +1,6 @@
 package edu.mario.mg.security
 
+import edu.mario.mg.utils.Constants
 
 import java.time.LocalDateTime
 
@@ -11,8 +12,8 @@ class Permission {
     String description
 
     boolean enabled = true
-    String createdBy
-    String modifyBy
+    String createdBy = Constants.SYSTEM
+    String modifyBy = Constants.SYSTEM
     LocalDateTime created
     LocalDateTime updated
 
