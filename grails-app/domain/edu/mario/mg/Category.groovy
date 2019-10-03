@@ -1,4 +1,4 @@
-
+package edu.mario.mg
 
 class Category {
     int code

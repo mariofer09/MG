@@ -1,9 +1,6 @@
-
-
-import com.sun.jmx.snmp.Timestamp
+package edu.mario.mg
 
 import java.time.LocalDateTime
-
 
 class Manga {
     int code
