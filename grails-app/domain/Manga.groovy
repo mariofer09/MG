@@ -1,6 +1,8 @@
-package edu.mario.mg.security
+
 
 import com.sun.jmx.snmp.Timestamp
+
+import java.time.LocalDateTime
 
 
 class Manga {
@@ -9,8 +11,8 @@ class Manga {
     String category
     String author
     int chapters
-    Timestamp begin
-    Timestamp end
+    LocalDateTime begin
+    LocalDateTime end
 
 
 
