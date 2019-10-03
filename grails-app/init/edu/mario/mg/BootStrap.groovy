@@ -10,6 +10,7 @@ class BootStrap {
     private BasicParam basicParam = new BasicParam()
     private BasicPermission basicPermission = new BasicPermission()
 
+
     def init = { servletContext ->
         basicUser.insert()
         basicParam.insert()
