@@ -1,14 +1,19 @@
 package edu.mario.mg
 
 import edu.mario.mg.utils.Constants
+import org.hibernate.type.descriptor.sql.VarcharTypeDescriptor
 
 import java.time.LocalDateTime
 
-class Author {
+class Pelicula {
 
-    String firstName
-    String lastName
-    String description
+    int id_pelicula
+    String nombre
+    String duracion
+    String estreno
+    int id_clasificacion
+    String imagen
+    String descripcion
 
     boolean enabled = true
     String createdBy = Constants.SYSTEM
@@ -17,7 +22,7 @@ class Author {
     LocalDateTime updated
 
     static constraints = {
-        table "authors"
+        table "peliculas"
 
         description sqlType: "text"
     }

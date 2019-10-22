@@ -2,19 +2,22 @@ package edu.mario.mg
 
 import edu.mario.mg.utils.Constants
 
-class Ranking {
+import java.time.LocalDateTime
 
-    String description
-    Manga manga
-    int rank
+class HoraFecha {
 
-
+    int hora
+    String fecha
 
     boolean enabled = true
     String createdBy = Constants.SYSTEM
     String modifyBy = Constants.SYSTEM
+    LocalDateTime created
+    LocalDateTime updated
 
     static constraints = {
-        table "rankings"
+        table "horaFecha"
+
+        description sqlType: "text"
     }
 }

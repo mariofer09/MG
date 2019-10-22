@@ -5,17 +5,11 @@ import edu.mario.mg.utils.Constants
 import java.time.LocalDate
 import java.time.LocalDateTime
 
-class Manga {
+class Clasificacion {
 
-    String description
-    String name
-    Category category
-    Author author
-    int quantityChapters
-    LocalDate begin
-    LocalDate end
+  int id_clasificacion
+    String detalles
 
-    static hasMany = [chapters: Chapter]
 
     boolean enabled = true
     String createdBy = Constants.SYSTEM
@@ -24,7 +18,7 @@ class Manga {
     LocalDateTime updated
 
     static constraints = {
-        table "mangas"
+        table "Clasificaciones"
 
         description sqlType: "text"
     }

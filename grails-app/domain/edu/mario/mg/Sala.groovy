@@ -1,16 +1,16 @@
 package edu.mario.mg
 
-import edu.mario.mg.security.User
 import edu.mario.mg.utils.Constants
 
 import java.time.LocalDateTime
 
-class LastRead {
+class Sala {
 
-    User user
-    Manga manga
-    Chapter chapters
-    int lastPageRead
+    int id_sala
+    int numButacas
+    
+
+
 
     boolean enabled = true
     String createdBy = Constants.SYSTEM
@@ -19,8 +19,9 @@ class LastRead {
     LocalDateTime updated
 
     static constraints = {
-        table "last_reads"
+        table "salas"
 
         description sqlType: "text"
     }
+
 }
